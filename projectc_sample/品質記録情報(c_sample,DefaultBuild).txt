@@ -1,0 +1,285 @@
+品質記録情報
+2023年10月24日 15:44:15
+
+------ ビルド開始(c_sample, DefaultBuild) ------
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\ccrx.exe string_3.c -isa=rxv1 -fpu -lang=c -include=. -output=obj=DefaultBuild\1st\string_3.obj -optimize=0 -nologo
+string_3.c(39):W0520118:A void function may not return a value
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\rlink.exe -subcommand=DefaultBuild\1st\c_sample.clnk
+W0561017:Paid license of CC-RX V3 is not found, and the evaluation period has expired. Please consider purchasing the product.
+W0561017:Paid license of CC-RX V3 is not found, and the evaluation period has expired. Please consider purchasing the product.
+Renesas Optimizing Linker Completed
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\ccrx.exe dbsct.c -isa=rxv1 -fpu -lang=c -include=. -output=obj=DefaultBuild\dbsct.obj -debug -g_line -optimize=0 -map=DefaultBuild\1st\c_sample.bls -nologo
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\ccrx.exe intprg.c -isa=rxv1 -fpu -lang=c -include=. -output=obj=DefaultBuild\intprg.obj -debug -g_line -optimize=0 -map=DefaultBuild\1st\c_sample.bls -nologo
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\ccrx.exe string_3.c -isa=rxv1 -fpu -lang=c -include=. -output=obj=DefaultBuild\string_3.obj -debug -g_line -optimize=0 -map=DefaultBuild\1st\c_sample.bls -nologo
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\ccrx.exe sbrk.c -isa=rxv1 -fpu -lang=c -include=. -output=obj=DefaultBuild\sbrk.obj -debug -g_line -optimize=0 -map=DefaultBuild\1st\c_sample.bls -nologo
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\ccrx.exe resetprg.c -isa=rxv1 -fpu -lang=c -include=. -output=obj=DefaultBuild\resetprg.obj -debug -g_line -optimize=0 -map=DefaultBuild\1st\c_sample.bls -nologo
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\ccrx.exe lowsrc.c -isa=rxv1 -fpu -lang=c -include=. -output=obj=DefaultBuild\lowsrc.obj -debug -g_line -optimize=0 -map=DefaultBuild\1st\c_sample.bls -nologo
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\ccrx.exe vecttbl.c -isa=rxv1 -fpu -lang=c -include=. -output=obj=DefaultBuild\vecttbl.obj -debug -g_line -optimize=0 -map=DefaultBuild\1st\c_sample.bls -nologo
+string_3.c(39):W0520118:A void function may not return a value
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\rlink.exe -subcommand=DefaultBuild\c_sample.clnk
+W0561017:Paid license of CC-RX V3 is not found, and the evaluation period has expired. Please consider purchasing the product.
+W0561017:Paid license of CC-RX V3 is not found, and the evaluation period has expired. Please consider purchasing the product.
+Renesas Optimizing Linker Completed
+------ ビルド終了(エラー:0個, 警告:6個)(c_sample, DefaultBuild) ------
+
+--- CommandFile 1 ---
+DefaultBuild\1st\c_sample.clnk :
+-library=DefaultBuild\c_sample.lib
+-input=DefaultBuild\1st\dbsct.obj
+-input=DefaultBuild\1st\intprg.obj
+-input=DefaultBuild\1st\resetprg.obj
+-input=DefaultBuild\1st\sbrk.obj
+-input=DefaultBuild\1st\vecttbl.obj
+-input=DefaultBuild\1st\lowsrc.obj
+-input=DefaultBuild\lowlvl.obj
+-input=DefaultBuild\1st\string_3.obj
+-noprelink
+-nodebug
+-output=DefaultBuild\1st\c_sample.abs
+-map=DefaultBuild\1st\c_sample.bls
+-list=DefaultBuild\1st\c_sample.map
+-nooptimize
+-start=B_1,R_1,B_2,R_2,B,R,SU,SI/04,PResetPRG/0FFF80000,C_1,C_2,C,C$DSEC,C$BSEC,C$INIT,C$VTBL,C$VECT,D_1,D_2,D,P,PIntPRG,W_1,W_2,W,L/0FFF80100,FIXEDVECT/0FFFFFFD0
+-rom=D=R,D_1=R_1,D_2=R_2
+-nologo
+-end
+-input=DefaultBuild\1st\c_sample.abs
+-output=DefaultBuild\1st\c_sample.mot
+-form=stype
+-exit
+
+--- CommandFile 2 ---
+DefaultBuild\c_sample.clnk :
+-library=DefaultBuild\c_sample.lib
+-input=DefaultBuild\dbsct.obj
+-input=DefaultBuild\intprg.obj
+-input=DefaultBuild\resetprg.obj
+-input=DefaultBuild\sbrk.obj
+-input=DefaultBuild\vecttbl.obj
+-input=DefaultBuild\lowsrc.obj
+-input=DefaultBuild\lowlvl.obj
+-input=DefaultBuild\string_3.obj
+-noprelink
+-output=DefaultBuild\c_sample.abs
+-list=DefaultBuild\c_sample.map
+-nooptimize
+-start=B_1,R_1,B_2,R_2,B,R,SU,SI/04,PResetPRG/0FFF80000,C_1,C_2,C,C$DSEC,C$BSEC,C$INIT,C$VTBL,C$VECT,D_1,D_2,D,P,PIntPRG,W_1,W_2,W,L/0FFF80100,FIXEDVECT/0FFFFFFD0
+-rom=D=R,D_1=R_1,D_2=R_2
+-nologo
+-end
+-input=DefaultBuild\c_sample.abs
+-output=DefaultBuild\c_sample.mot
+-form=stype
+-exit
+
+
+--- SHA1 hash value of output files ---
+C:\Users\AIS-N\OneDrive\デスクトップ\申羲燮\C言語研修配布物\project c_sample\DefaultBuild\c_sample.abs: 7c119c15c4ef73fc3d70529fd7f9103a3ff75712
+C:\Users\AIS-N\OneDrive\デスクトップ\申羲燮\C言語研修配布物\project c_sample\DefaultBuild\c_sample.mot: 101edb4e9a382e23e8d42f86f6192d2b9263bf5e
+
+
+--- システム情報 ---
+*OS バージョン
+ Microsoft Windows 11 Home (-, 10.0.22621, WOW64)
+*言語
+ 日本語 (日本)
+*.NET Framework バージョン
+ Microsoft .NET Framework 4 [.NET 4.8 or later] (533320)
+
+--- アプリケーション情報 ---
+*製品名
+ CS+ for CC
+*パッケージ・バージョン
+ V8.09.00  [12 Dec 2022]
+*バージョン
+ V9.09.00.06 [12 Dec 2022]
+*アセンブリ・バージョン
+ 3.12.10.1
+*製品ライセンス
+ 
+*実行場所
+ C:\Program Files (x86)\Renesas Electronics\CS+\CC
+*メモリ使用量
+ *プライベート・ワーキング・セット
+  434 MB
+ *GDIオブジェクト数
+  2072
+ *USERオブジェクト数
+  1021
+ *開いているファイル
+  2 editors, 2 files, 6 KB
+
+--- ビルド・ツール・プラグイン情報 ---
+RH850ビルド・ツールCC-RH用プラグイン
+ *バージョン
+  V8.09.00.00 [07 Oct 2022]
+ *アセンブリ・バージョン
+  1.1.10.12
+ *DLL ファイル名
+  BuildToolCCRH.dll
+RL78ビルド・ツールCC-RL用プラグイン
+ *バージョン
+  V8.09.00.01 [07 Oct 2022]
+ *アセンブリ・バージョン
+  1.0.0.0
+ *DLL ファイル名
+  BuildToolCCRL.dll
+RXビルド・ツールCC-RX用プラグイン
+ *バージョン
+  V8.09.00.00 [07 Oct 2022]
+ *アセンブリ・バージョン
+  3.12.10.1
+ *DLL ファイル名
+  BuildToolCCRX.dll
+RH850ビルド・ツールGHS CCRH850用プラグイン
+ *バージョン
+  V1.07.00.00 [07 Oct 2022]
+ *アセンブリ・バージョン
+  1.0.0.0
+ *DLL ファイル名
+  BuildToolGHSCCRH850.dll
+
+--- デバッグ・ツール・プラグイン情報 ---
+デバッガ・コレクション・プラグイン
+ *バージョン
+  V8.09.00.03 [24 Nov 2022]
+ *アセンブリ・バージョン
+  2.12.10.1
+ *DLL ファイル名
+  DebugToolCollection.dll
+
+--- その他のプラグイン情報 ---
+RH850用コード生成
+ *バージョン
+  V1.02.02.05 [25 May 2018]
+ *アセンブリ・バージョン
+  1.0.0.0
+ *DLL ファイル名
+  CodeGeneratorRH850.dll
+コード生成プラグイン
+ *バージョン
+  V4.08.06.01 [28 Oct 2022]
+ *アセンブリ・バージョン
+  3.0.0.0
+ *DLL ファイル名
+  CodePart.dll
+コード生成／端子図プラグイン
+ *バージョン
+  V2.10.07.02 [08 Nov 2021]
+ *アセンブリ・バージョン
+  1.0.0.0
+ *DLL ファイル名
+  CodePart2.dll
+デバッグ・コンソール・プラグイン
+ *バージョン
+  V8.09.00.03 [24 Nov 2022]
+ *アセンブリ・バージョン
+  8.9.0.0
+ *DLL ファイル名
+  DebugConsole.dll
+Quick and Effective tool solution - QE
+ *バージョン
+  V9.09.00.01 [18 Oct 2022]
+ *アセンブリ・バージョン
+  1.15.10.16
+ *DLL ファイル名
+  InCarTools.dll
+端子配置プラグイン
+ *バージョン
+  V1.54.01.01 [31 Jul 2014]
+ *アセンブリ・バージョン
+  1.6.10.23
+ *DLL ファイル名
+  PinConfig.dll
+プログラム解析プラグイン
+ *バージョン
+  V4.12.00.01 [14 Apr 2021]
+ *アセンブリ・バージョン
+  3.12.11.9
+ *DLL ファイル名
+  ProgramAnalyzer.dll
+IronPythonコンソール・プラグイン
+ *バージョン
+  V1.45.00.03 [22 Nov 2022]
+ *アセンブリ・バージョン
+  1.6.10.23
+ *DLL ファイル名
+  PythonConsole.dll
+エディタ・パネル
+ *バージョン
+  V1.19.00.01 [24 Oct 2022]
+ *アセンブリ・バージョン
+  1.1.0.0
+ *DLL ファイル名
+  SEditor.dll
+スタック見積もりツール
+ *バージョン
+  V1.05.00.02 [30 Jul 2014]
+ *アセンブリ・バージョン
+  1.30.11.15
+ *DLL ファイル名
+  Stk.dll
+アップデート・マネージャ・プラグイン
+ *バージョン
+  V2.03.00.02 [29 Oct 2018]
+ *アセンブリ・バージョン
+  1.13.6.20
+ *DLL ファイル名
+  Update.dll
+
+デバッグ・ツール共通インタフェース
+ *バージョン
+  V8.09.00.03 [24 Nov 2022]
+ *アセンブリ・バージョン
+  3.12.10.1
+ *DLL ファイル名
+  CommonDebuggerInterface.dll
+デバイス情報共通インタフェース
+ *バージョン
+  V9.09.00.01 [18 Oct 2022]
+ *アセンブリ・バージョン
+  3.0.0.0
+ *DLL ファイル名
+  DeviceInformation.dll
+
+--- メイン・プロジェクト情報 ---
+C:\Users\AIS-N\OneDrive\デスクトップ\申羲燮\C言語研修配布物\project c_sample\c_sample.mtpj
+マイクロコントローラ情報
+ *R5F56218BxFP
+  *ファイル名: バージョン
+   RX_Productlist.xml: V3.110001
+   R5F56218BxFP_common.xml: V3.11.00
+   -: -
+   -: -
+   RX62N.ddi: 1.40A
+  
+
+ビルド・ツール情報
+ *CC-RX
+   * プラグイン(*.dll)のバージョン
+     V8.09.00.02 [04 Nov 2022]
+   * コンパイラ・パッケージのバージョン
+     V3.05.00
+  
+
+デバッグ・ツール情報
+ *RX シミュレータ
+  Debugger Library V8.09.00.03 [24 Nov 2022]
+  
+
+その他のツール情報
+ *なし
+
+ *なし
+
+ *なし
+
+ *なし
+
+ *プログラム解析
+  *バージョン
+   V4.12.00.01 [14 Apr 2021]
+
+ *なし
+
+

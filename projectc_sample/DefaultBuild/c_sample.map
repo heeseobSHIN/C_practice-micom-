@@ -1,0 +1,84 @@
+Renesas Optimizing Linker (W3.05.00 )             24-Oct-2023 15:44:15
+
+*** Options ***
+
+-subcommand=DefaultBuild\c_sample.clnk
+-library=DefaultBuild\c_sample.lib
+-input=DefaultBuild\dbsct.obj
+-input=DefaultBuild\intprg.obj
+-input=DefaultBuild\resetprg.obj
+-input=DefaultBuild\sbrk.obj
+-input=DefaultBuild\vecttbl.obj
+-input=DefaultBuild\lowsrc.obj
+-input=DefaultBuild\lowlvl.obj
+-input=DefaultBuild\string_3.obj
+-noprelink
+-output=DefaultBuild\c_sample.abs
+-list=DefaultBuild\c_sample.map
+-nooptimize
+-start=B_1,R_1,B_2,R_2,B,R,SU,SI/04,PResetPRG/0FFF80000,C_1,C_2,C,C$DSEC,C$BSEC,C$INIT,C$VTBL,C$VECT,D_1,D_2,D,P,PIntPRG,W_1,W_2,W,L/0FFF80100,FIXEDVECT/0FFFFFFD0
+-rom=D=R,D_1=R_1,D_2=R_2
+-nologo
+-end
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+B_1
+                                  00000004  0000000a         7   1
+R_1
+                                  0000000b  0000005b        51   1
+B_2
+                                  0000005c  0000005c         0   1
+R_2
+                                  0000005c  0000005c         0   1
+B
+                                  0000005c  0000046f       414   4
+R
+                                  00000470  000006cb       25c   4
+SU
+                                  000006cc  000007cb       100   4
+SI
+                                  000007cc  00000acb       300   4
+PResetPRG
+                                  fff80000  fff80033        34   1
+C_1
+                                  fff80100  fff801d1        d2   1
+C_2
+                                  fff801d2  fff803d3       202   2
+C
+                                  fff803d4  fff80497        c4   4
+C$DSEC
+                                  fff80498  fff804bb        24   4
+C$BSEC
+                                  fff804bc  fff804d3        18   4
+C$INIT
+                                  fff804d4  fff804d4         0   1
+C$VTBL
+                                  fff804d4  fff804d4         0   1
+C$VECT
+                                  fff804d4  fff808d3       400   4
+D_1
+                                  fff808d4  fff80924        51   1
+D_2
+                                  fff80925  fff80925         0   1
+D
+                                  fff80928  fff80b83       25c   4
+P
+                                  fff80b84  fff82bbd      203a   1
+PIntPRG
+                                  fff82bbe  fff82d13       156   1
+W_1
+                                  fff82d14  fff82d14         0   1
+W_2
+                                  fff82d14  fff82d14         0   1
+W
+                                  fff82d14  fff82d14         0   1
+L
+                                  fff82d14  fff82de8        d5   4
+$ADDR_C_FFFFFFA0
+                                  ffffffa0  ffffffaf        10   1
+FIXEDVECT
+                                  ffffffd0  ffffffff        30   4
