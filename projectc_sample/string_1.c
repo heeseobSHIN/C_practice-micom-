@@ -11,5 +11,5 @@ void main(void)
 
     printf("%d\n", strlen(s1));    //  strlen ŠÖ”
 
-    
+   
 }

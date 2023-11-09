@@ -7,6 +7,9 @@ void main(void);
 
 //型のサイズ（バイト数）を調べます
 	void main(void){
+		
+	char abc[10];
+	float number[] = {1.20, 3.11, 2.22 };
 	
 	
 	printf("%d,", sizeof(short int));
@@ -26,6 +29,11 @@ void main(void);
 	printf("%d,", sizeof(long double));
 	
 	
+	
+	
+	
+	printf("%d,", sizeof(abc));
+	printf("%d,", sizeof(number));
 	
 	
 	}

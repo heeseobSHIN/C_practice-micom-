@@ -7,8 +7,8 @@
   </Placeholders>
   <Project Name="c_sample" Type="Application">
     <Files>
+      <Path>C_String.c</Path>
       <Path>dbsct.c</Path>
-      <Path>string_3.c</Path>
       <Path>textdata.h</Path>
       <Path>lowlvl.src</Path>
       <Path>lowsrc.h</Path>
@@ -84,7 +84,7 @@
           <Path>DefaultBuild\vecttbl.obj</Path>
           <Path>DefaultBuild\lowsrc.obj</Path>
           <Path>DefaultBuild\lowlvl.obj</Path>
-          <Path>DefaultBuild\string_3.obj</Path>
+          <Path>DefaultBuild\C_String.obj</Path>
         </LinkOrder>
         <CommonOptions>
           <IncludePathForC>.</IncludePathForC>

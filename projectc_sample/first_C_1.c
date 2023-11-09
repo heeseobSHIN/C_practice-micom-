@@ -10,7 +10,7 @@ void sort_array(char *adr);
 
 void main(void)
 {
-	char array[] = "zergpower08starcARFTSDGERRHADFNRSNZAAsgbaeb ";
+	char array[] = "RX621 Renesas ";
 	char *ptr;
 	
 	

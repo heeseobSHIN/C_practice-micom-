@@ -1,4 +1,4 @@
-Renesas Optimizing Linker (W3.05.00 )             24-Oct-2023 15:44:14
+Renesas Optimizing Linker (W3.05.00 )             27-Oct-2023 11:18:26
 
 *** Options ***
 
@@ -11,7 +11,7 @@ Renesas Optimizing Linker (W3.05.00 )             24-Oct-2023 15:44:14
 -input=DefaultBuild\1st\vecttbl.obj
 -input=DefaultBuild\1st\lowsrc.obj
 -input=DefaultBuild\lowlvl.obj
--input=DefaultBuild\1st\string_3.obj
+-input=DefaultBuild\1st\exp9_1.obj
 -noprelink
 -nodebug
 -output=DefaultBuild\1st\c_sample.abs
@@ -69,17 +69,17 @@ D_2
 D
                                   fff80928  fff80b83       25c   4
 P
-                                  fff80b84  fff82c35      20b2   1
+                                  fff80b84  fff82bb0      202d   1
 PIntPRG
-                                  fff82c36  fff82d8b       156   1
+                                  fff82bb1  fff82d06       156   1
 W_1
-                                  fff82d8c  fff82d8c         0   1
+                                  fff82d07  fff82d07         0   1
 W_2
-                                  fff82d8c  fff82d8c         0   1
+                                  fff82d07  fff82d07         0   1
 W
-                                  fff82d8c  fff82d8c         0   1
+                                  fff82d07  fff82d07         0   1
 L
-                                  fff82d8c  fff82e60        d5   4
+                                  fff82d08  fff82dec        e5   4
 $ADDR_C_FFFFFFA0
                                   ffffffa0  ffffffaf        10   1
 FIXEDVECT

@@ -1,26 +1,24 @@
 品質記録情報
-2023年10月24日 15:44:15
+2023年10月27日 11:18:26
 
 ------ ビルド開始(c_sample, DefaultBuild) ------
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\ccrx.exe string_3.c -isa=rxv1 -fpu -lang=c -include=. -output=obj=DefaultBuild\1st\string_3.obj -optimize=0 -nologo
-string_3.c(39):W0520118:A void function may not return a value
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\ccrx.exe exp9_1.c -isa=rxv1 -fpu -lang=c -include=. -output=obj=DefaultBuild\1st\exp9_1.obj -optimize=0 -nologo
 C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\rlink.exe -subcommand=DefaultBuild\1st\c_sample.clnk
 W0561017:Paid license of CC-RX V3 is not found, and the evaluation period has expired. Please consider purchasing the product.
 W0561017:Paid license of CC-RX V3 is not found, and the evaluation period has expired. Please consider purchasing the product.
 Renesas Optimizing Linker Completed
 C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\ccrx.exe dbsct.c -isa=rxv1 -fpu -lang=c -include=. -output=obj=DefaultBuild\dbsct.obj -debug -g_line -optimize=0 -map=DefaultBuild\1st\c_sample.bls -nologo
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\ccrx.exe intprg.c -isa=rxv1 -fpu -lang=c -include=. -output=obj=DefaultBuild\intprg.obj -debug -g_line -optimize=0 -map=DefaultBuild\1st\c_sample.bls -nologo
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\ccrx.exe string_3.c -isa=rxv1 -fpu -lang=c -include=. -output=obj=DefaultBuild\string_3.obj -debug -g_line -optimize=0 -map=DefaultBuild\1st\c_sample.bls -nologo
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\ccrx.exe sbrk.c -isa=rxv1 -fpu -lang=c -include=. -output=obj=DefaultBuild\sbrk.obj -debug -g_line -optimize=0 -map=DefaultBuild\1st\c_sample.bls -nologo
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\ccrx.exe resetprg.c -isa=rxv1 -fpu -lang=c -include=. -output=obj=DefaultBuild\resetprg.obj -debug -g_line -optimize=0 -map=DefaultBuild\1st\c_sample.bls -nologo
 C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\ccrx.exe lowsrc.c -isa=rxv1 -fpu -lang=c -include=. -output=obj=DefaultBuild\lowsrc.obj -debug -g_line -optimize=0 -map=DefaultBuild\1st\c_sample.bls -nologo
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\ccrx.exe intprg.c -isa=rxv1 -fpu -lang=c -include=. -output=obj=DefaultBuild\intprg.obj -debug -g_line -optimize=0 -map=DefaultBuild\1st\c_sample.bls -nologo
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\ccrx.exe resetprg.c -isa=rxv1 -fpu -lang=c -include=. -output=obj=DefaultBuild\resetprg.obj -debug -g_line -optimize=0 -map=DefaultBuild\1st\c_sample.bls -nologo
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\ccrx.exe sbrk.c -isa=rxv1 -fpu -lang=c -include=. -output=obj=DefaultBuild\sbrk.obj -debug -g_line -optimize=0 -map=DefaultBuild\1st\c_sample.bls -nologo
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\ccrx.exe exp9_1.c -isa=rxv1 -fpu -lang=c -include=. -output=obj=DefaultBuild\exp9_1.obj -debug -g_line -optimize=0 -map=DefaultBuild\1st\c_sample.bls -nologo
 C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\ccrx.exe vecttbl.c -isa=rxv1 -fpu -lang=c -include=. -output=obj=DefaultBuild\vecttbl.obj -debug -g_line -optimize=0 -map=DefaultBuild\1st\c_sample.bls -nologo
-string_3.c(39):W0520118:A void function may not return a value
 C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.05.00\Bin\rlink.exe -subcommand=DefaultBuild\c_sample.clnk
 W0561017:Paid license of CC-RX V3 is not found, and the evaluation period has expired. Please consider purchasing the product.
 W0561017:Paid license of CC-RX V3 is not found, and the evaluation period has expired. Please consider purchasing the product.
 Renesas Optimizing Linker Completed
------- ビルド終了(エラー:0個, 警告:6個)(c_sample, DefaultBuild) ------
+------ ビルド終了(エラー:0個, 警告:4個)(c_sample, DefaultBuild) ------
 
 --- CommandFile 1 ---
 DefaultBuild\1st\c_sample.clnk :
@@ -32,7 +30,7 @@ DefaultBuild\1st\c_sample.clnk :
 -input=DefaultBuild\1st\vecttbl.obj
 -input=DefaultBuild\1st\lowsrc.obj
 -input=DefaultBuild\lowlvl.obj
--input=DefaultBuild\1st\string_3.obj
+-input=DefaultBuild\1st\exp9_1.obj
 -noprelink
 -nodebug
 -output=DefaultBuild\1st\c_sample.abs
@@ -58,7 +56,7 @@ DefaultBuild\c_sample.clnk :
 -input=DefaultBuild\vecttbl.obj
 -input=DefaultBuild\lowsrc.obj
 -input=DefaultBuild\lowlvl.obj
--input=DefaultBuild\string_3.obj
+-input=DefaultBuild\exp9_1.obj
 -noprelink
 -output=DefaultBuild\c_sample.abs
 -list=DefaultBuild\c_sample.map
@@ -74,8 +72,8 @@ DefaultBuild\c_sample.clnk :
 
 
 --- SHA1 hash value of output files ---
-C:\Users\AIS-N\OneDrive\デスクトップ\申羲燮\C言語研修配布物\project c_sample\DefaultBuild\c_sample.abs: 7c119c15c4ef73fc3d70529fd7f9103a3ff75712
-C:\Users\AIS-N\OneDrive\デスクトップ\申羲燮\C言語研修配布物\project c_sample\DefaultBuild\c_sample.mot: 101edb4e9a382e23e8d42f86f6192d2b9263bf5e
+C:\Users\AIS-N\OneDrive\デスクトップ\申羲燮\C言語研修配布物\projectc_sample\DefaultBuild\c_sample.abs: 9a6649c38ddac3553dc764dfcf166c7321a33367
+C:\Users\AIS-N\OneDrive\デスクトップ\申羲燮\C言語研修配布物\projectc_sample\DefaultBuild\c_sample.mot: 4cb96119295734bf96b878b91c5b4e099f62e086
 
 
 --- システム情報 ---
@@ -101,13 +99,13 @@ C:\Users\AIS-N\OneDrive\デスクトップ\申羲燮\C言語研修配布物\proj
  C:\Program Files (x86)\Renesas Electronics\CS+\CC
 *メモリ使用量
  *プライベート・ワーキング・セット
-  434 MB
+  427 MB
  *GDIオブジェクト数
-  2072
+  2097
  *USERオブジェクト数
-  1021
+  1033
  *開いているファイル
-  2 editors, 2 files, 6 KB
+  3 editors, 3 files, 10 KB
 
 --- ビルド・ツール・プラグイン情報 ---
 RH850ビルド・ツールCC-RH用プラグイン
@@ -243,7 +241,7 @@ IronPythonコンソール・プラグイン
   DeviceInformation.dll
 
 --- メイン・プロジェクト情報 ---
-C:\Users\AIS-N\OneDrive\デスクトップ\申羲燮\C言語研修配布物\project c_sample\c_sample.mtpj
+C:\Users\AIS-N\OneDrive\デスクトップ\申羲燮\C言語研修配布物\projectc_sample\c_sample.mtpj
 マイクロコントローラ情報
  *R5F56218BxFP
   *ファイル名: バージョン

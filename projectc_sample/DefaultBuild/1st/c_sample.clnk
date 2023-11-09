@@ -6,7 +6,7 @@
 -input=DefaultBuild\1st\vecttbl.obj
 -input=DefaultBuild\1st\lowsrc.obj
 -input=DefaultBuild\lowlvl.obj
--input=DefaultBuild\1st\string_3.obj
+-input=DefaultBuild\1st\exp9_1.obj
 -noprelink
 -nodebug
 -output=DefaultBuild\1st\c_sample.abs

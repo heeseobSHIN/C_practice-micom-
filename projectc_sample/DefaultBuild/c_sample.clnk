@@ -6,7 +6,7 @@
 -input=DefaultBuild\vecttbl.obj
 -input=DefaultBuild\lowsrc.obj
 -input=DefaultBuild\lowlvl.obj
--input=DefaultBuild\string_3.obj
+-input=DefaultBuild\exp9_1.obj
 -noprelink
 -output=DefaultBuild\c_sample.abs
 -list=DefaultBuild\c_sample.map

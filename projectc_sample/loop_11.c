@@ -1,59 +1,65 @@
-/***********************************************************************/
-/*                                                                     */
-/*  FILE        :loop_11.c　　                                         */
-/*  DESCRIPTION :素数かどうかのチェック                                */
-/*  CPU TYPE    :RX62N                                                 */
-/*                                                                     */
-/*  NOTE:                                                            　*/
-/*                                                                     */
-/***********************************************************************/
+//素数（prime number)を洗い出すプログラムを実装します。
 
-/* include file */
 #include <stdio.h>
-#include <machine.h>
+#include <stdbool.h>
 
-/* 置き換えマクロ定義 */
+bool isPrime(int n) {
+	
+	int i;
+    if (n <= 1) {
+        return false;
+    }
 
-/* 関数プロトタイプ宣言 */
-void	 	main(void);
+    if (n <= 3) {
+        return true;
+    }
 
-/* main()：メイン処理 */
-void main(void)
-{
-	int	i;
-	int	j;
-	int	primeNo;
-	int	counter;
-	
-	/* 開始メッセージを出力する */
-	printf("prime numberの調査\n");
-	
-	primeNo = 0;
-	j = 2;
-	
-	while(1){
-		/* 調査対象個数を出力する */
-		printf("調査対象個数 =");
-		scanf("%d",&counter);
-		
-		if (counter == 999)	//終了コードをチェックする
-			break;
+    if (n % 2 == 0 || n % 3 == 0) {
+        return false;
+    }
+    
+    //素数は2,3,5,7,11,13,17,19の順番で
+    for ( i = 5; i * i <= n; i += 6) {
+        if (n % i == 0 || n % (i + 2) == 0) {
+            return false;
+        }
+    }
 
-		/* 調査対象個数分を繰り返す */
-		for ( i = 1; i < counter; ++i, ++primeNo){
-			/* 対象となる数値は素数か */
-			for ( j = 2 ; j < primeNo; ++j){
-				if ( primeNo % j )
-					;
-				else
-					break;	//素数ではない
-			}
-			if ( j == primeNo )
-				printf ("%8d\n", primeNo);
-		}
-	}
-	
-	/* 終了メッセージを出力する */
-	printf("prime numberの調査は終了\n");	
+    return true;
 }
-	
+
+
+
+void main(void) {
+    
+    int num = 2;
+
+    int count;
+    printf("素数調査開始\n");
+    while (1) {
+        printf("調査対象個数入力 (999で　終了): ");
+        scanf("%d", &count);
+
+        if (count == 999) {
+            printf("調査終了.\n");
+            break;
+        }
+
+        printf("調査対象までの素数個数:\n");
+        
+        while (count > 0) {
+            if (isPrime(num)) {
+                printf("%d ", num);
+                count--;
+            }
+            num++;
+        }
+
+        printf("\n完了しました。.\n");
+    }
+
+   
+}
+
+
+
